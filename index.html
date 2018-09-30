@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Untitled</title>
     <script src="libraries/p5.js" type="text/javascript"></script>
-
+<script src="libraries/prismatic.min.js" type="text/javascript"></script>
     <script src="libraries/p5.dom.js" type="text/javascript"></script>
     <script src="libraries/p5.sound.js" type="text/javascript"></script>
 
@@ -13,5 +13,22 @@
     <style> body {padding: 0; margin: 0;} canvas {vertical-align: top;} </style>
   </head>
   <body>
+
+    <ml-model
+      src="assets/sphere.fbx"
+      id="fishball3D"
+      style="width: 300px; height: 300px; position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);"
+      z-offset="500px"
+      materials="assets/fishball2.png"
+      extractable="true"
+      unbounded="true">
+    </ml-model>
+
+
+    <script>
+  if (window.mlWorld) {
+  document.getElementById("astro2d").style.visibility = "hidden";
+  }
+  </script>
   </body>
 </html>
