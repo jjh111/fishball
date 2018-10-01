@@ -7,7 +7,7 @@ var yoff = 0.3; // 2nd dimension of perlin noise
 
 function setup() {
   createCanvas(windowWidth, windowHeight, WEBGL);
-  img = loadImage("assets/fishball2.jpg");
+  img = loadImage("assets/fishBall.jpg");
 }
 
 
