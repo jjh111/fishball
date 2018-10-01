@@ -2,28 +2,30 @@
 var img;
 var vid;
 var theta = 0;
-var yoff = 0.0; // 2nd dimension of perlin noise
+var yoff = 0.3; // 2nd dimension of perlin noise
 
 
 function setup() {
-  createCanvas(1200, 900, WEBGL);
-  img = loadImage("assets/fishBall.jpg");
+  createCanvas(windowWidth, windowHeight, WEBGL);
+  img = loadImage("assets/fishBall2.jpg");
 }
 
+
+
 function draw() {
-  background(250);
+  background(0);
 
   var locY = (mouseY / height - 0.5) * (-2);
   var locX = (mouseX / width - 0.5) * 2;
 
 
 
-  /*ambientLight(400);
+  ambientLight(400);
   directionalLight(200, 0, 0, 0.25, 0.25, 0.25);
   specularMaterial(250,0,0);
   pointLight(0, 0, 200, locX, locY, 0);
   pointLight(200, 200, 0, -locX, -locY, 0);
-*/
+
   //background(46, 92, 50);
   fill(46, 92, 90);
   //noStroke();
