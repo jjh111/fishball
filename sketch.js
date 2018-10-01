@@ -26,6 +26,7 @@ function draw() {
   pointLight(0, 0, 200, locX, locY, 0);
   pointLight(200, 200, 0, -locX, -locY, 0);
 */
+
   //background(46, 92, 50);
   fill(46, 92, 90);
   //noStroke();
@@ -68,6 +69,7 @@ function draw() {
   if (mouseIsPressed == true) {
     rotateZ(mouseY / mouseX);
   }
+  
   push();
   rotateX(mouseX * 0.01);
   rotateY(mouseY * 0.01);
