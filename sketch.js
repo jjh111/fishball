@@ -19,13 +19,13 @@ function draw() {
   var locX = (mouseX / width - 0.5) * 2;
 
 
-
+/*
   ambientLight(400);
   directionalLight(200, 0, 0, 0.25, 0.25, 0.25);
   specularMaterial(250,0,0);
   pointLight(0, 0, 200, locX, locY, 0);
   pointLight(200, 200, 0, -locX, -locY, 0);
-
+*/
   //background(46, 92, 50);
   fill(46, 92, 90);
   //noStroke();
